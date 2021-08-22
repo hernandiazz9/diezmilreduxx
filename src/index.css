@@ -1,0 +1,143 @@
+
+
+.container-botom{
+  display: grid;
+  grid-template-areas: 
+  'nombre-jugador nombre-sala '
+  '. cerrar-sesion';
+  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  justify-content: space-between;
+  justify-items: center;
+}
+.nombre-sala{
+  grid-area: nombre-sala;
+}
+
+.nombre-jugador{
+  /* display: block; */
+  /* grid-area: nombre-jugador ; */
+  text-transform: uppercase;
+}
+.cerrar-sesion{
+  grid-area: cerrar-sesion;
+}
+
+
+.container-puntos{
+  
+  display: grid;
+  grid-template-areas:
+  'puntos puntos-guardados' ;
+  justify-content: space-around;
+  margin-top:2rem ;
+  font-size: 1.2rem;
+}
+.puntos{
+  grid-area: puntos;
+}
+.puntos-guardados{
+  
+  grid-area: puntos-guardados;
+}
+.dados{
+  background-color: #6FCF97;
+  padding: 2rem 0;
+    display: grid;
+    max-width: 550px;
+    grid-template-areas: 
+    '. dado1 .  dado2 .'
+    'dado4 . roll . dado5'
+    '. . dado3 . .';
+    justify-content: center;
+    align-items: center;
+   grid-template-rows: 1fr 1fr 1fr ;
+   grid-template-columns: 50px 52px 52px 52px 50px;
+   row-gap: 1.5rem;
+   justify-items: center;
+
+}
+
+.rolltodos{
+  
+  height: 30px;
+  justify-items: center;
+  grid-area: roll;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+}
+.dado1{
+  grid-area: dado1;
+}
+.dado2{
+  grid-area: dado2;
+}
+.dado3{
+  grid-area: dado3;
+}
+.dado4{
+  grid-area: dado4;
+}
+.dado5{
+  grid-area: dado5;
+}
+.bloqueado{
+  pointer-events: none;
+  box-shadow: 0px 0px 9px 4px black;
+}
+.bloqueado2{
+
+  pointer-events: none;
+  box-shadow: 0px 0px 9px 4px red;
+}
+
+.die-container{
+  margin:0px 0px -6px 0px !important;
+}
+
+.dados-boton{
+  padding: 0;
+  margin:2px 1px;
+  border-style: none;
+  width: 50px;
+  background-color: #6FCF97;
+}
+
+
+.nombre-salaa{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+
+
+
+.anotar{
+  margin-top: 1rem;
+  margin-left: 8.5rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: red;
+}
+
+.bloquear{
+  margin-left: .6rem;
+}
+
+
+
+.diezmil{
+  font-family: 'Luckiest Guy', cursive;
+  margin-bottom: -10px;
+  background-color: seagreen;
+  text-align: center;
+  font-size: 55px;
+  
+}
+.diezmil-color{
+  color: #E3FB4F !important;
+  padding-bottom: 1rem;
+}
